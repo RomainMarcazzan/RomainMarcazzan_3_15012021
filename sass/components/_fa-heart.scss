@@ -1,0 +1,27 @@
+.fa-heart {
+  font-size: 2.5rem;
+  color: grey;
+  cursor: pointer;
+  &--empty {
+    position: absolute;
+    top: 0.5rem;
+    left: 90%;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+  &--full {
+    position: absolute;
+    opacity: 0;
+    top: 0.5rem;
+    left: 90%;
+    &:hover {
+      opacity: 1;
+      color: $secondary-color;
+      transition: opacity 800ms;
+    }
+  }
+}

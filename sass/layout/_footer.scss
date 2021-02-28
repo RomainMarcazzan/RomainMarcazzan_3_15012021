@@ -1,0 +1,26 @@
+.footer {
+  background-color: #353535;
+  width: 100%;
+  padding: 3rem;
+  color: white;
+
+  &__title {
+    font-family: "Shrikhand";
+    margin-bottom: 2rem;
+    font-weight: lighter;
+  }
+
+  & a {
+    color: white;
+  }
+
+  @include desktop-only {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title {
+      margin-bottom: 0;
+    }
+  }
+}

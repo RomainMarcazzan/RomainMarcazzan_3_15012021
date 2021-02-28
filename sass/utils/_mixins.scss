@@ -1,0 +1,72 @@
+@mixin btn(
+  $height,
+  $width,
+  $bgcolor1: $primary-color,
+  $bgcolor2: $secondary-color
+) {
+  height: $height;
+  width: $width;
+  border: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  font-size: 1.6rem;
+  border-radius: 3rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem $middle_grey;
+  background: linear-gradient(-180deg, $secondary-color, $primary-color);
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: lighten($secondary-color, 5);
+    opacity: 0;
+    z-index: -1;
+    border-radius: 3rem;
+    transition: opacity 350ms;
+    box-shadow: 0.5rem 0.5rem 0.5rem $dark-grey;
+  }
+}
+
+@mixin circle(
+  $height,
+  $width,
+  $radius,
+  $bgcolor: $primary-color,
+  $color: white
+) {
+  position: absolute;
+  height: $height;
+  width: $width;
+  border-radius: $radius;
+  background-color: $bgcolor;
+  color: $color;
+}
+
+@mixin card($height, $bgcolor: white, $radius: 1.5rem) {
+  height: $height;
+  background-color: $bgcolor;
+  border-radius: $radius;
+  box-shadow: 0.5rem 0.5rem 0.5rem $dark_grey;
+  cursor: pointer;
+}
+
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}

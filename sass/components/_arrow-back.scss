@@ -1,0 +1,12 @@
+.arrow-back {
+  display: none;
+  position: absolute;
+  left: 5%;
+  top: 1.9rem;
+  font-size: 1.5rem;
+
+  &--visible {
+    display: inline-block;
+    color: black;
+  }
+}
