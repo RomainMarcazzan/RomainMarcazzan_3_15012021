@@ -1,0 +1,52 @@
+.loader {
+  font-size: 10rem;
+  position: absolute;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   min-height: 100vh;
+
+  & i {
+    color: $primary-color;
+    animation: spinner 3000ms, unload 1ms 3000ms both;
+  }
+}
+
+.home__container {
+  //   position: absolute;
+  animation: load 100ms 3000ms both;
+  z-index: 1;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes unload {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
