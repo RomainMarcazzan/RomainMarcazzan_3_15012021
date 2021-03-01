@@ -1,0 +1,39 @@
+.fav {
+  & input {
+    display: none;
+  }
+
+  & i {
+    position: absolute;
+    font-size: 2.5rem;
+    color: grey;
+    cursor: pointer;
+  }
+
+  & .full {
+    opacity: 0;
+    &:focus {
+      opacity: 1;
+      color: $primary-color;
+      transition: opacity 900ms;
+    }
+
+    @media screen and (min-width: 1024px) {
+      &:hover {
+        opacity: 1;
+        color: $primary-color;
+        transition: opacity 900ms;
+      }
+    }
+  }
+
+  & input:checked ~ .full {
+    opacity: 1;
+    color: $primary-color;
+  }
+
+  & input ~ .full {
+    opacity: 0;
+    color: $primary-color;
+  }
+}

@@ -61,60 +61,68 @@
     <main class="container">
       <div class="restaurants">
         <h1 class="restaurants__title">Restaurants</h1>
-        <section
-          class="restaurants__card"
-          onclick="location.href='./menu1.html'"
-        >
-          <img
-            src="/public/img/la_palette_du_gout.jpg"
-            alt=""
-            class="restaurants__card__image"
-          />
+        <section class="restaurants__card">
+          <a href="./menu1.html"
+            ><img
+              src="/public/img/la_palette_du_gout.jpg"
+              alt=""
+              class="restaurants__card__image"
+          /></a>
           <h2 class="restaurants__card__title">La palette du gôut</h2>
           <span class="restaurants__card__city">Ménilmontant</span>
-          <i class="far fa-heart"></i>
+          <label class="fav">
+            <input type="checkbox" />
+            <i class="far fa-heart empty"></i>
+            <i class="fas fa-heart full"></i>
+          </label>
         </section>
 
-        <section
-          class="restaurants__card"
-          onclick="location.href='./menu2.html'"
-        >
-          <img
-            src="/public/img/la_note_enchantee.jpg"
-            alt=""
-            class="restaurants__card__image"
-          />
+        <section class="restaurants__card">
+          <a href="./menu2.html"
+            ><img
+              src="/public/img/la_note_enchantee.jpg"
+              alt=""
+              class="restaurants__card__image"
+          /></a>
           <h2 class="restaurants__card__title">La note enchantée</h2>
           <span class="restaurants__card__city">Charone</span>
-          <i class="far fa-heart"></i>
+          <label class="fav">
+            <input type="checkbox" />
+            <i class="far fa-heart empty"></i>
+            <i class="fas fa-heart full"></i>
+          </label>
         </section>
 
-        <section
-          class="restaurants__card"
-          onclick="location.href='./menu3.html'"
-        >
-          <img
-            src="/public/img/a_la_francaise.jpg"
-            alt=""
-            class="restaurants__card__image"
-          />
+        <section class="restaurants__card">
+          <a href="./menu3.html"
+            ><img
+              src="/public/img/a_la_francaise.jpg"
+              alt=""
+              class="restaurants__card__image"
+          /></a>
           <h2 class="restaurants__card__title">À la française</h2>
           <span class="restaurants__card__city">Cité Rouge</span>
-          <i class="far fa-heart"></i>
+          <label class="fav">
+            <input type="checkbox" />
+            <i class="far fa-heart empty"></i>
+            <i class="fas fa-heart full"></i>
+          </label>
         </section>
 
-        <section
-          class="restaurants__card"
-          onclick="location.href='./menu4.html'"
-        >
-          <img
-            src="/public/img/le_delice_des_sens.jpg"
-            alt=""
-            class="restaurants__card__image"
-          />
+        <section class="restaurants__card">
+          <a href="./menu4.html"
+            ><img
+              src="/public/img/le_delice_des_sens.jpg"
+              alt=""
+              class="restaurants__card__image"
+          /></a>
           <h2 class="restaurants__card__title">Le délice des sens</h2>
           <span class="restaurants__card__city">Folie-Méricourt</span>
-          <i class="far fa-heart"></i>
+          <label class="fav">
+            <input type="checkbox" />
+            <i class="far fa-heart empty"></i>
+            <i class="fas fa-heart full"></i>
+          </label>
         </section>
       </div>
     </main>

@@ -57,12 +57,11 @@
   color: $color;
 }
 
-@mixin card($height, $bgcolor: white, $radius: 1.5rem) {
+@mixin card($height, $bgcolor: white, $radius: 2rem) {
   height: $height;
   background-color: $bgcolor;
   border-radius: $radius;
   box-shadow: 0.5rem 0.5rem 0.5rem $dark_grey;
-  cursor: pointer;
 }
 
 @mixin desktop-only {
