@@ -18,7 +18,7 @@
       transition: opacity 900ms;
     }
 
-    @media screen and (min-width: 0px) {
+    @media screen and (min-width: 769px) {
       &:hover {
         opacity: 1;
         color: $secondary-color;
