@@ -13,12 +13,12 @@
 
   & i {
     color: $primary-color;
-    animation: spinner 3000ms, unload 1ms 3000ms both;
+    animation: spinner 300ms, unload 1ms 300ms both;
   }
 }
 
 .home__container {
-  animation: load 100ms 3000ms both;
+  animation: load 100ms 300ms both;
   z-index: 1;
 }
 
