@@ -105,22 +105,9 @@
 
   @for $i from 3 through 6 {
     & article > :nth-child(#{$i}) {
-      animation-delay: $i * 60ms;
+      animation-delay: $i * 100ms;
     }
   }
-
-  // & article > :nth-child(3) {
-  //   animation-delay: 100ms;
-  // }
-  // & article > :nth-child(4) {
-  //   animation-delay: 200ms;
-  // }
-  // & article > :nth-child(5) {
-  //   animation-delay: 300ms;
-  // }
-  // & article > :nth-child(6) {
-  //   animation-delay: 400ms;
-  // }
 
   @include desktop-only {
     display: grid;

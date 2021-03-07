@@ -2,33 +2,29 @@
   font-size: 10rem;
   position: absolute;
   z-index: 0;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   min-height: 100vh;
 
   & i {
-    color: $primary-color;
-    animation: spinner 300ms, unload 1ms 300ms both;
+    animation: spinner 2000ms, unload 1ms 2000ms forwards;
   }
 }
 
 .home__container {
-  animation: load 100ms 300ms both;
+  animation: load 500ms 2000ms backwards;
   z-index: 1;
 }
 
 @keyframes spinner {
-  from {
+  0% {
     transform: rotate(0deg);
+    color: $secondary-color;
   }
 
-  to {
+  100% {
     transform: rotate(360deg);
+    color: $primary-color;
   }
 }
 
