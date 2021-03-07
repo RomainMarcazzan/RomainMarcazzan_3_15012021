@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
 
   &__title {
     margin: 2rem 0 2rem 0;
@@ -120,6 +120,19 @@
     & i {
       right: 2rem;
       bottom: 2.5rem;
+    }
+  }
+
+  @include desktop-only {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 45% 45%;
+    column-gap: 2rem;
+    align-items: center;
+    // row-gap: 2rem;
+
+    &__title {
+      grid-column: 1 / span 2;
     }
   }
 }

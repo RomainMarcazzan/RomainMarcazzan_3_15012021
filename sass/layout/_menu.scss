@@ -15,10 +15,11 @@
     @include card($height: 6.5rem);
     padding: 1.2rem;
     margin-bottom: 1.5rem;
-    animation: menu-loading 1000ms;
     cursor: pointer;
     overflow: hidden;
-    display: ba;
+    opacity: 0;
+    animation: menu-loading 1000ms both;
+
     &__top {
       margin-bottom: 0.5rem;
       width: 75%;
@@ -92,7 +93,7 @@
     @keyframes menu-loading {
       from {
         opacity: 0;
-        transform: translateY(5rem);
+        transform: translateY(2rem);
       }
 
       to {
@@ -101,6 +102,25 @@
       }
     }
   }
+
+  @for $i from 3 through 6 {
+    & article > :nth-child(#{$i}) {
+      animation-delay: $i * 60ms;
+    }
+  }
+
+  // & article > :nth-child(3) {
+  //   animation-delay: 100ms;
+  // }
+  // & article > :nth-child(4) {
+  //   animation-delay: 200ms;
+  // }
+  // & article > :nth-child(5) {
+  //   animation-delay: 300ms;
+  // }
+  // & article > :nth-child(6) {
+  //   animation-delay: 400ms;
+  // }
 
   @include desktop-only {
     display: grid;
