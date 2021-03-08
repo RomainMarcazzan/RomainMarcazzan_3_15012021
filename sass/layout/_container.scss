@@ -1,4 +1,7 @@
 .container {
   background-color: $middle_grey;
   width: 100%;
+  @include desktop-only {
+    padding: 5rem;
+  }
 }
