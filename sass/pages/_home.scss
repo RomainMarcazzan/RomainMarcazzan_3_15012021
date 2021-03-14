@@ -121,6 +121,23 @@
       right: 2rem;
       bottom: 2.5rem;
     }
+
+    &__new {
+      display: none;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      padding: 0.5rem;
+      color: darken($color: $tertiary-color, $amount: 40);
+      background-color: $tertiary-color;
+      font-weight: bold;
+      font-size: 1.5rem;
+      border-radius: 0.2rem;
+
+      &--visible {
+        display: inline-block;
+      }
+    }
   }
 
   @include desktop-only {
